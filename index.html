@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>RecRoom Recreation</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <img src="assets/logo.png" alt="Game Logo" class="logo">
+    <img src="assets/logo.png" alt="Game Logo" class="logo" />
     <nav>
-      <ul>
+      <ul id="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#screenshots">Screenshots</a></li>
         <li><a href="#download">Download</a></li>
         <li><a href="#news">News</a></li>
         <li><a href="#leaderboard">Leaderboard</a></li>
       </ul>
+      <div class="hamburger" id="hamburger">&#9776;</div>
     </nav>
   </header>
 
   <section class="hero">
-    <img src="assets/banner.jpg" alt="Banner">
+    <img src="assets/banner.jpg" alt="Banner" />
     <div class="hero-text">
       <h1>Welcome to RecRoom Recreation</h1>
       <p>Multiplayer. VR. Non-VR. Social. Game Modes. Tools. Custom Worlds.</p>
@@ -37,25 +38,29 @@
   <section id="screenshots">
     <h2>Screenshots</h2>
     <div class="gallery">
-      <img src="assets/screenshot1.jpg" alt="Screenshot 1">
-      <img src="assets/screenshot2.jpg" alt="Screenshot 2">
+      <img src="assets/screenshot1.jpg" alt="Screenshot 1" />
+      <img src="assets/screenshot2.jpg" alt="Screenshot 2" />
     </div>
   </section>
 
   <section id="download">
     <h2>Download</h2>
     <p>Coming soon to PC, Steam, and Oculus. Beta links will be available here.</p>
-    <button class="btn">Join Beta</button>
+    <button class="btn" id="download-btn">Join Beta</button>
   </section>
 
   <section id="news">
     <h2>News</h2>
-    <p>Stay tuned for devlogs, updates, and patch notes.</p>
+    <div id="news-articles">
+      <!-- News articles will be injected here -->
+    </div>
   </section>
 
   <section id="leaderboard">
     <h2>Top Players</h2>
-    <p>Leaderboard integration coming soon.</p>
+    <ul id="leaderboard-list">
+      <!-- Leaderboard entries will be injected here -->
+    </ul>
   </section>
 
   <footer>
